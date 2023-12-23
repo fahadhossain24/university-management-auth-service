@@ -8,6 +8,7 @@
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts",
     "lint:fix": "eslint --fix",
     "format:check": "prettier --ignore-path .gitignore --write .",
+    "lint-format:check": "lint:check && format:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fahad Hossain",
