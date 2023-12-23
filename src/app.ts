@@ -1,15 +1,15 @@
-import express, { Application, Request, Response } from 'express';
-import cors from 'cors';
+import express, { Application, Request, Response } from 'express'
+import cors from 'cors'
 
-const app: Application = express();
+const app: Application = express()
 
-// global middleware 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+// global middleware
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('server running');
+app.get('/', (req: Request, res: any) => {
+    res.send('server running')
 })
 
-export default app;
+export default app
